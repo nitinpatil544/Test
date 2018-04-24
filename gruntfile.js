@@ -63,7 +63,7 @@ module.exports = function ( grunt ) {
         // Check text domain
         checktextdomain: {
             options: {
-                text_domain: [ 'tgmpa', 'jobmate', 'jobmatetm', 'wp-job-manager', 'wp-job-manager-resumes', 'buddypress' ], //Specify allowed domain(s)
+                text_domain: [ 'tgmpa', 'test', 'jobmatetm', 'wp-job-manager', 'wp-job-manager-resumes', 'buddypress' ], //Specify allowed domain(s)
                 keywords: [ //List keyword specifications
                     '__:1,2d',
                     '_e:1,2d',
