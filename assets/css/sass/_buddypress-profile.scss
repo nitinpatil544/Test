@@ -1,0 +1,383 @@
+/*.bp-user .jm-page-header,
+.bp-user .jm-page-header {
+    padding: 50px 0;
+}*/
+
+#buddypress div#item-header {
+    border: 1px solid #f8f8f8;;
+    background: #f8f8f8;
+}
+
+#buddypress div#item-header #item-header-cover-image #item-header-content {
+    .jobmate-bp-follow-followers,
+    .jobmate-bp-follow-following {
+        display: none;
+    }
+}
+
+#buddypress #cover-image-container > a {
+
+    &:after {
+        content: ' ';
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0.45) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 1;
+    }
+}
+
+#buddypress .item-body-wrap div.item-list-tabs ul li.last select {
+    max-width: 135px;
+}
+
+#buddypress #item-header-cover-image #item-header-avatar {
+    margin-top: 145px;
+}
+
+#buddypress #item-header-cover-image #item-header-avatar img.avatar {
+    background: $color_white;
+}
+
+#buddypress div#item-header img.avatar {
+    max-width: 150px;
+    background: $color_white;
+    border: 1px solid $color__border-light;
+    border-radius: 100%;
+    padding: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.055);
+}
+
+body #buddypress #item-body {
+    padding-left: 0;
+    padding-top: 40px;
+}
+
+.entry-content .activity-inner .fluid-width-video-wrapper,
+.entry-content .activity-inner img.aligncenter {
+    margin: 0;
+}
+
+#buddypress .left div.item-list-tabs li:first-child {
+    border-top: 1px solid $color__border-default;
+    padding-top: 10px;
+}
+
+#buddypress .left div.item-list-tabs li {
+    float: initial;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color__border-default;
+}
+
+#buddypress .left div.item-list-tabs ul li.current a,
+#buddypress .left div.item-list-tabs ul li.selected a,
+#buddypress .left div.item-list-tabs ul li a {
+    position: relative;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.buddypress {
+    .entry-header, .jm-post-entry-header {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+
+    .jm-post-author {
+        display: none;
+    }
+}
+
+#buddypress #item-header-cover-image #item-buttons .generic-button a {
+    background: $color__link;
+    border: 1px solid $color__link;
+    color: #FFF;
+    font-size: small;
+    cursor: pointer;
+    outline: 0;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        background: #00a4cd;
+        border: 1px solid #00a4cd;
+        color: #FFF;
+        outline: 0;
+        text-decoration: none;
+    }
+}
+
+/* profile field */
+#buddypress div.profile h2 {
+    font-size: 24px;
+}
+
+#buddypress #profile-edit-form ul.button-nav {
+    margin-left: 0;
+
+    li.current a {
+        background: $color__link;
+        border: 0;
+        color: $color_white;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    li a:hover,
+        li.current a:hover {
+        background: $color__link-hover;
+        border: 0;
+        color: $color_white;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    li a {
+        border: 0;
+
+        &:hover {
+            border: 0;
+        }
+    }
+}
+
+.input-options.datebox-selects {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#buddypress button.visibility-toggle-link {
+    background: $color__link;
+    border: 0;
+    color: $color_white;
+
+    &:hover {
+        background: $color__link-hover;
+        border: 0;
+        color: $color_white;
+    }
+}
+
+/* notification */
+select#notification-select,
+#buddypress div.item-list-tabs ul li.last select,
+select#messages-select {
+    width: auto;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 4px;
+}
+
+/* message */
+form#search-message-form input {
+    height: 30px;
+    margin-right: -4px;
+    float: left;
+}
+
+#buddypress table#message-threads {
+    p {
+        margin-bottom: 0;
+    }
+
+    /*    a {
+            background: $color__link;
+            border: 1px solid $color_white;
+            color: $color_white;
+
+            &:hover {
+                background: $color__link-hover;
+                border: 1px solid $color__link-hover;
+                color: $color_white;
+            }
+        }*/
+}
+
+#buddypress div#message-thread p#message-recipients a.button.confirm {
+    background: $color__link;
+    border: 0;
+    color: $color_white;
+
+    &:hover {
+        background: $color__link-hover;
+        border: 0;
+        color: $color_white;
+    }
+}
+
+#buddypress .standard-form label, #buddypress .standard-form legend, #buddypress .standard-form span.label {
+    display: block;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    width: auto;
+}
+
+#buddypress .standard-form input[type=text] {
+    width: 100%;
+}
+
+#buddypress .standard-form textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+#buddypress .standard-form div.submit {
+    padding: 20px 0 0;
+}
+
+/* group */
+#buddypress .item-body-wrap {
+
+    ul.item-list li div.item-desc {
+        width: calc(100% - 60px);
+    }
+
+    ul.item-list li div.action {
+        margin-left: 60px;
+    }
+}
+
+/* setting */
+form#settings-form {
+
+    input#submit {
+        width: auto;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+#buddypress .standard-form select {
+    min-width: 120px;
+    width: auto;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 4px;
+}
+
+#buddypress table.profile-settings .standard-form select {
+    height: 30px;
+    margin-right: -4px;
+    float: left;
+}
+
+.rtm-privacy-levels {
+    margin-bottom: 30px;
+
+    label {
+        display: block;
+        margin-bottom: -10px;
+    }
+}
+
+@media (min-width: 544px) {
+    .left {
+        flex: 0 0 200px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 782px) {
+    #buddypress div#item-header-cover-image .user-nicename a,
+    #buddypress div#item-header-cover-image .user-nicename {
+        color: $color_black;
+        text-shadow: none;
+    }
+}
+
+@media (min-width: 783px) {
+    #buddypress div#item-header #item-header-cover-image #item-header-content {
+        clear: both;
+        float: left;
+        margin-left: 170px;
+        margin-top: -133px;
+        width: auto;
+    }
+
+    body.single-item.groups #buddypress div#item-header #item-header-cover-image #item-header-content,
+    body.single-item.groups #buddypress div#item-header #item-header-cover-image #item-actions {
+        margin-top: 235px;
+    }
+
+    #buddypress #item-header-cover-image #item-header-avatar {
+        margin-left: 4px;
+    }
+}
+
+/* sitewide-notice */
+
+#sitewide-notice.admin-bar-on #message {
+    top: 7.4em;
+    width: 1170px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.admin-bar-on #message button {
+    right: 10px;
+    top: 27px;
+}
+
+#buddypress #message.info {
+    margin-bottom: 20px;
+}
+
+#buddypress div#message p, #sitewide-notice p,
+#buddypress div#message.error p,
+#buddypress p.warning,
+body.profile_page_bp-profile-edit.modal-open #TB_ajaxContent p.warning, body.users_page_bp-profile-edit.modal-open #TB_ajaxContent p.warning,
+div.bp-avatar-status p.success, div.bp-cover-image-status p.success,
+#buddypress div#message.updated p,
+p.rtmedia-no-media-found {
+    background-color: $color_white;
+    border: 1px solid #e5e5e5;
+    color: #cdbb27;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin-top: 3px;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 1px 1px #aaa;
+}
+
+#buddypress div#message.error p {
+    color: #800;
+}
+
+div.bp-avatar-status p.success, div.bp-cover-image-status p.success,
+#buddypress div#message.updated p {
+    color: #250;
+}
+
+/* buttons styling */
+#buddypress .comment-reply-link,
+#buddypress .generic-button a,
+#buddypress .standard-form button,
+#buddypress a.button,
+#buddypress input[type=button],
+#buddypress input[type=reset],
+#buddypress input[type=submit],
+#buddypress ul.button-nav li a,
+a.bp-title-button,
+#buddypress input[type=button] {
+    border: 0;
+
+    &:hover {
+        border: 0;
+    }
+}

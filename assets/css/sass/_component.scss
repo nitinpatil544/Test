@@ -1,0 +1,375 @@
+/* Components */
+
+.site-content {
+
+    /* Elementor Button */
+    .elementor-button,
+    .elementor-slides .slick-slide-inner .elementor-slide-button,
+    .elementor-slides .slick-slide-inner .elementor-slide-button:hover {
+        color: $color_white;
+        text-transform: uppercase;
+        background: $color__link;
+        border: none;
+
+        &:hover {
+            background: $color__link-hover;
+        }
+    }
+
+    .btn-ghost .elementor-button {
+        background: transparent;
+        border: 2px solid $color_white;
+
+        &:hover {
+            background: $color__link-hover;
+        }
+    }
+
+    .elementor-button:focus,
+        .elementor-button:hover,
+        .elementor-button:visited {
+        opacity: 1;
+    }
+
+    /* Accordion */
+    .elementor-accordion .elementor-accordion-title {
+        font-weight: 500;
+    }
+}
+
+/* Elementor Icon */
+div.elementor-icon {
+    color: $color__link;
+}
+
+.small-heading h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: lighten($color_black, 50%);
+}
+
+.center-btm-border,
+.left-btm-border {
+    position: relative;
+    margin: 0 auto 1.5rem;
+    padding-bottom: 1rem;
+    max-width: 700px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 4rem;
+        height: 3px;
+        background: $color__link;
+        transform: translateX(-50%);
+    }
+}
+
+.left-btm-border {
+    max-width: none;
+
+    &:after {
+        left: 0;
+        width: 2.5rem;
+        transform: none;
+    }
+}
+
+.link-color-banner {
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+/* Slick Slider */
+.site-content {
+
+    .elementor-slick-slider .slick-dots-inside .slick-dots {
+        bottom: 1.2rem;
+    }
+
+    .elementor-slick-slider ul.slick-dots li {
+        margin-left: 0.75rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        button:before {
+            font-size: 10px;
+        }
+    }
+
+    .elementor-widget-heading .elementor-heading-title {
+        line-height: 1.5;
+    }
+}
+
+/* Services Section */
+.services-section {
+
+    .glyph-icon {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Custom price table */
+.pricing-outline {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        background: $color_white;
+        border-bottom: 1px solid #f3f3f3;
+    }
+}
+
+.custom-price-table {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 750px;
+
+    .elementor-column {
+        z-index: 10;
+
+        &:hover {
+            z-index: 20;
+        }
+    }
+
+    .elementor-widget-price-table {
+
+        .elementor-widget-container {
+            padding-bottom: 10px;
+            color: $color__text-site;
+            background: transparent;
+        }
+
+        &.active .elementor-widget-container {
+            background-color: $color_white;
+            box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.08);
+
+            div.elementor-price-table__price {
+                color: $color__link;
+            }
+
+            .elementor-price-table__button {
+                color: $color__link;
+                border: 1px solid $color__link;
+            }
+        }
+    }
+
+    div.elementor-price-table__header {
+        padding: 30px 0 0;
+        background: transparent;
+
+        .elementor-price-table__heading {
+            font-size: 12px;
+            color: lighten($color__text-site, 20%);
+            text-transform: uppercase;
+        }
+    }
+
+    div.elementor-price-table__price {
+        padding: 30px 0 24px;
+        font-size: 52px;
+        color: $color__text-heading;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .elementor-price-table__features-list {
+        padding: 32px 0 0 !important;
+
+        li:before {
+            margin-top: 12px !important;
+            margin-bottom: 12px !important;
+            border-color: transparent !important;
+        }
+    }
+
+    .elementor-price-table__button {
+        color: $color__text-site;
+        background: transparent;
+        border: 1px solid rgba(0,0,0,0.1);
+
+        &:hover,
+            &:focus,
+            &:visited {
+            color: $color__text-site;
+            background: transparent;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+    }
+}
+
+/* Custom Testimonial */
+.custom-testimonial {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* post-section */
+.post-section {
+
+    .elementor-posts .elementor-post__card h4.elementor-post__title,
+    .elementor-posts .elementor-post__card .elementor-post__excerpt {
+        margin: 0 0 1rem;
+
+        a {
+            color: $color__text-heading;
+        }
+    }
+
+    .elementor-posts .elementor-post__card .elementor-post__read-more {
+        color: lighten($color__text-site, 40%);
+        text-transform: capitalize;
+    }
+}
+
+.client-list-slider {
+
+    .slick-slide figure {
+        display: flex;
+        margin: 0 auto !important;
+        padding: 1rem;
+        border: 1px solid rgba(0,0,0,0.2);
+        width: 210px;
+        height: 80px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 80px;
+        }
+
+    }
+}
+
+/* Site Footer */
+.site-footer-outline {
+
+    .elementor-widget-heading h3.elementor-heading-title {
+        padding-bottom: 1rem;
+        color: $color_white;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin: 0 0 rem-calc(12px);
+    }
+
+    a, p {
+        color: rgba(255,255,255, .55);
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a:hover {
+        color: $color_white;
+    }
+}
+
+/* Page Header */
+
+.jm-page-header {
+    align-items: center;
+    padding: 100px 0;
+    background: $color__background-site-title;
+    text-align: center;
+    position:relative;
+
+    .page-title {
+        max-width: 900px;
+        margin: auto;
+        position: relative;
+        color: $color_white;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        text-shadow: 0 0 3px rgba( 0, 0, 0, 0.8 );
+    }
+
+    &:before {
+        content: ' ';
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .jm-page-header {
+        padding: 50px 0;
+    }
+}
+
+.content-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .page-template-landing & {
+        padding-top: 0;
+    }
+}
+
+/* jm-page-header hide part */
+.jm-page-header {
+
+    input.application_button.button {
+        background: transparent;
+        border: 1px solid $color_white;
+        border-radius: 30px;
+
+        &:hover {
+            background: $color__link-hover;
+        }
+    }
+
+    .single_job_listing .job-manager-applications-applied-notice,
+    .job-manager-form.wp-job-manager-bookmarks-form {
+        display: none;
+    }
+
+    .job-manager-application-wrapper .application .application_details,
+    .single_job_listing .application .application_details,
+    input.apply-with-facebook.apply-with-facebook-button,
+    input.apply-with-xing {
+        display: none !important;
+    }
+
+    .job_application.application {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+}
+
+.content-wrapper {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+p.main-title.bhf-hidden {
+    display: none;
+}

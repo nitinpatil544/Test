@@ -1,0 +1,99 @@
+// ***** Constant Variables ***** //
+$color_black: #000;
+$color_white: #FFF;
+$color_gray: #666;
+$color_red: #FF0000;
+$rem-base: 16px;
+
+@media(max-width: 767px) {
+    $rem-base: 14px;
+}
+
+// Colors
+$color__link: #01ccff;
+$color__link-visited: $color__link;
+$color__link-hover: darken( $color__link, 10% );
+$color__link-gray: #888;
+$color__invalid-input: #b20000;
+
+
+//$color__background-body: #f8f9fa;
+//$color__background-screen: #f1f1f1;
+$color__background-info: #f4f4f4;
+$color__background-hr: #E6EAF0;
+$color__background-button: #aaa;
+$color__background-pre: #f5f5f5;
+$color__background-ins: #fff9c0;
+$color__background-light: #f6f6f6;
+$color__background-site-title: #324151;
+$color__background-thead: #324151;
+$color__background-table-row-hover: #fcfcfc;
+$color__background-form: #fcfcfc;
+$color__background-jobs-form: #1fa4ad;
+$color__background-mobile-nav: #1e2332;
+
+$color__background-full-time: #f15b65;
+$color__background-freelance: #2d3e50;
+$color__background-part-time: #14b1bb;
+$color__background-internship: #6a9cd0;
+$color__background-temporary: #4a3883;
+
+$color__text-site: rgba(0,0,0,0.65);
+$color__text-heading: #17181a;
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__text-main: #404040;
+
+$color__border-default: #e3e3e3;
+$color__border-light: #ddd;
+$color__border-button: #ccc #ccc #bbb;
+
+$color__border-input: #e5e5e5;
+$color__border-abbr: #666;
+
+//woocommerce colors
+$color__star-rating: #f9a109;
+$color__product-tag: #a3a3a3;
+
+// Typo
+//$font__main: 'Lato', sans-serif, Helvetica, Arial, sans-serif;
+$font__main: 'Roboto', sans-serif, Helvetica, Arial, sans-serif;
+$font__heading: $font__main;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+$font__icon: 'fontawesome';
+
+//rem base
+$font__rem-base: 16px;
+$font__base-font-size: 16px;
+$font__base-line-height: 24px;
+
+// Heading sizes
+$font__size-h1: 42px;
+$font__size-h2: 32px;
+$font__size-h3: 26px;
+$font__size-h4: 20px;
+$font__size-h5: 18px;
+$font__size-h6: 16px;
+
+
+// ***** Grid Breakpoints ***** //
+$grid-breakpoint-small: 544px !default; // Small screen / phone
+$grid-breakpoint-medium: 768px !default; // Medium screen / tablet
+$grid-breakpoint-large: 992px !default; // Large screen / desktop
+$grid-breakpoint-extra-large: 1200px !default; // Extra large screen / wide desktop
+
+// ***** Conainer Widths ***** //
+$container-width-small: 576px !default;
+$container-width-medium: 720px !default;
+$container-width-large: 940px !default;
+$container-width-extra-large: 1080px !default;
+
+// ***** Gutter Spacing ***** //
+$grid-gutter: 30px !default;
+
+// ***** End Variables ***** //

@@ -1,0 +1,58 @@
+.rg-boxed-layout {
+    background: #eee;
+
+    .site {
+        max-width: $container-width-extra-large;
+        margin: auto;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    li.hideshow.menu-item-has-children .sub-menu {
+        left: -92px;
+    }
+
+    #masthead,
+    #wbcom-header-topbar {
+        max-width: $container-width-extra-large;
+    }
+}
+
+@media(min-width: 1170px) {
+    .rg-boxed-layout .gform_wrapper {
+        max-width: 70%;
+    }
+}
+
+/* Page Layout */
+
+.jobmate-full_width_no_title .jm-page-header {
+    display: none;
+}
+
+.jobmate-full_width_no_title .content-area {
+    padding-top: 0;
+}
+
+.jobmate-stretched_view_no_title {
+
+    .jm-page-header {
+        display: none;
+    }
+
+    .content-area {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.jobmate-stretched_view .site-content > .container,
+.jobmate-stretched_view_no_title .site-content > .container {
+    max-width: 100%;
+    padding-left: 0;
+}
+
+.jobmate-stretched_view .content-area,
+.jobmate-stretched_view_no_title .content-area {
+    padding-right: 0;
+}

@@ -1,0 +1,16 @@
+.job-manager-form.wp-job-manager-bookmarks-form {
+    border: 1px solid $color__border-default;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    //margin-bottom: 60px;
+
+    padding: inherit;
+    background: inherit;
+}
+
+.wp-job-manager-bookmarks-form a.bookmark-notice {
+    color: $color__text-heading;
+
+    &:hover {
+        color: $color__link-hover;
+    }
+}

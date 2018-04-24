@@ -1,0 +1,176 @@
+/**
+ * jobs Dashboard
+ */
+.field.account-sign-in {
+    background: $color_white;
+    padding: 20px;
+    border: 1px solid $color__link;
+}
+
+div#job-manager-job-dashboard p,
+div#resume-manager-candidate-dashboard p,
+div#job-manager-alerts p,
+.jobmate-wp-job-manager-alert .entry-content {
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid $color__border-default;
+}
+
+#job-manager-job-dashboard table th.expires {
+    text-align: left;
+    padding-right: 18px;
+}
+
+#job-manager-job-dashboard table td.date,
+#job-manager-job-dashboard table td.expires {
+    width: 150px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#job-manager-job-dashboard table td.expires {
+    padding-right: 28px;
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions {
+    visibility: visible;
+}
+
+table.job-manager-jobs {
+    border: 1px solid $color__border-default;
+    background: $color_white;
+}
+
+#job-manager-job-dashboard thead {
+    background: $color__background-thead;
+    color: $color_white;
+
+    th {
+        font-weight: 500;
+    }
+
+    th.job_title {
+        padding-left: 28px;
+    }
+}
+
+#job-manager-job-dashboard table td.job_title {
+    width: 40%;
+    border-left: 1px solid $color__border-default;
+    padding-left: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#job-manager-job-dashboard thead td,
+#job-manager-job-dashboard thead th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a {
+    color: $color_gray;
+    font-size: 13px;
+    font-weight: 400;
+
+    &:hover {
+        color: $color__link;
+    }
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a:before {
+    content: ' ';
+    font-family: "Flaticon";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a.job-dashboard-action-edit:before {
+    content: '\f156';
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a.job-dashboard-action-relist:before {
+    content: '\f1a8';
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a.job-dashboard-action-mark_filled:before {
+    content: '\f12d';
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a.job-dashboard-action-mark_not_filled:before {
+    content: '\f12e';
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a.job-dashboard-action-duplicate:before {
+    content: '\f157';
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li a.job-dashboard-action-delete:before {
+    content: '\f254';
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li .job-dashboard-action-delete {
+    color: $color_gray;
+
+    &:hover {
+        color: red;
+    }
+}
+
+table tbody tr:hover {
+    background: $color__background-table-row-hover;
+}
+
+#job-manager-job-dashboard table tr:hover td.job_title {
+    border-left-color: $color__link;
+    box-shadow: inset 4px 0px 0 0px $color__link;
+}
+
+#job-manager-job-dashboard table td.job_title a {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color__text-heading;
+
+    &:hover {
+        color: $color__link;
+    }
+}
+
+#job-manager-job-dashboard table .applications a {
+    background: $color__link;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 0 0 2px;
+    padding: 0 5px;
+    min-width: 7px;
+    height: 17px;
+    border-radius: 11px;
+    color: $color_white;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+    z-index: 26;
+
+    &:hover {
+        background: $color__link-hover;
+    }
+}
+
+@media (max-width: 767px) {
+    #job-manager-job-dashboard {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    #job-manager-job-dashboard table ul.job-dashboard-actions li {
+        &:after {
+            display: none;
+        }
+
+        a {
+            display: inline-block;
+        }
+    }
+}

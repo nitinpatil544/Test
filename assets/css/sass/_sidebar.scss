@@ -1,0 +1,436 @@
+/*--------------------------------------------------------------
+3.5 - Widgets
+--------------------------------------------------------------*/
+.widget-area {
+    padding-top: 3rem;
+    padding-bottom: 50px;
+}
+
+.widget-area .widget {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.widget-title {
+    position: relative;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Calendar Widget */
+#wp-calendar {
+    margin: 0;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.8;
+    border: 1px solid $color__border-light;
+
+    thead {
+        border-bottom: 1px solid $color__border-light;
+    }
+
+    tfoot {
+        border-top: 1px solid $color__border-light;
+        background: transparent;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    tfoot tr td {
+        border-bottom: none;
+    }
+}
+
+#wp-calendar th,
+#wp-calendar td,
+#wp-calendar caption {
+    text-align: center;
+    border: none;
+}
+
+#wp-calendar thead td {
+    //color: #ccc;
+}
+
+#wp-calendar caption {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#wp-calendar td#today {
+    font-weight: 600;
+    color: $color__link;
+}
+
+#wp-calendar #prev {
+    text-align: left;
+}
+
+#wp-calendar #next {
+    text-align: right;
+}
+
+
+.widget-area {
+
+    ul {
+        margin: 0 0 0 0.5rem;
+        list-style: none;
+
+        li {
+            margin-bottom: 0.25rem;
+            list-style: none;
+        }
+    }
+}
+
+.widget_search {
+
+    .btn,
+    input[type=submit],
+    input[type=button],
+    #submit {
+        padding: 0.25rem 0.75rem;
+        font-size: 12px;
+        min-width: 90px;
+        height: 32px;
+    }
+}
+
+.widget-area .widget h3,
+.widget-area .widget_bp_profile_search h4 {
+    color: #8D909E;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 3px 0 35px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.widget-area .widget ul ul {
+    margin-left: 1.2em;
+}
+
+.widget-area .widget p {
+    margin-bottom: 14px;
+}
+
+/* Text Widget */
+.widget-area .textwidget ul {
+    list-style: disc outside;
+    margin: 0 0 24px;
+}
+
+.widget-area .textwidget li {
+    margin-left: 36px;
+}
+
+.widget-area .widget form label,
+.widget-area .widget_bp_profile_search .label {
+    display: block;
+    /*font-weight: 600;*/
+    margin: 0 0 1rem;
+}
+
+.widget-area .widget form .bbp-remember-me label {
+    display: inline;
+}
+
+.widget-area .widget form#sidebar-login-form p.forgetmenot {
+    margin: 26px 0;
+    clear: both;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.widget-area .widget form#sidebar-login-form a.sidebar-wp-register {
+    display: inline-block;
+    margin: 10px 0 0 8px;
+}
+
+.widget-area .widget div.item-options {
+    clear: left;
+    font-size: 11px;
+    margin: 0 auto 15px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.widget-area .widget div.item-options a.selected {
+    font-weight: 600;
+    color: #555;
+}
+
+.widget img.avatar {
+    box-shadow: none;
+}
+
+.widget-area .widget ul.item-list li {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    min-height: 54px;
+    line-height: 1.3;
+}
+
+.widget-area .widget ul.item-list li div.item-avatar {
+    float: left;
+}
+
+.widget-area .widget ul.item-list img.avatar {
+    margin-right: 12px;
+    width: 50px;
+    height: 50px;
+}
+
+.widget-area .widget ul.item-list .item {
+    margin-left: 64px;
+    word-wrap: break-word;
+}
+
+.widget-area .widget ul.item-list .item .item-title {
+    font-weight: 500;
+}
+
+.widget-area .widget ul.item-list .item .item-meta {
+    color: #999;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.widget-area .widget dl {
+    width: 100%;
+    overflow: hidden;
+    line-height: 1.3;
+}
+
+.widget-area .widget dl dt {
+    float: left;
+    width: 80%;
+    clear: left;
+    margin-bottom: 10px;
+}
+
+.widget-area .widget dl dd {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+/* RSS & Entries Widgets */
+.widget_rss li {
+    margin: 12px 0;
+}
+
+.widget_recent_entries .post-date,
+.widget_rss .rss-date {
+    display: block;
+    //margin-left: 12px;
+    padding-bottom: 0.5rem;
+    color: #aaa;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* Twitter Widget */
+.widget_twitter li {
+    list-style-type: none;
+}
+
+.widget_twitter .timesince {
+    display: block;
+    text-align: right;
+}
+
+/* Profile Login Widget */
+.widget-area .widget #sidebarme {
+    overflow: hidden;
+}
+
+.widget-area .widget #sidebarme img.avatar {
+    float: left;
+}
+
+.widget-area .widget #sidebarme ul.sidebarme-quicklinks {
+    margin: 3px 0 0 64px;
+    word-wrap: break-word;
+}
+
+.widget-area .widget #sidebarme ul.sidebarme-quicklinks li.sidebarme-username {
+    font-weight: 600;
+}
+
+.widget-area .widget #sidebarme ul.sidebarme-quicklinks li.sidebarme-profile {
+    text-transform: capitalize;
+}
+
+/* BuddyPress Log In Widget */
+.widget-area .widget_bp_core_login_widget {
+    overflow: hidden;
+}
+
+.widget-area .widget_bp_core_login_widget img.avatar {
+    float: left;
+}
+
+.widget-area .widget_bp_core_login_widget .bp-login-widget-user-links {
+    margin-left: 64px;
+    word-wrap: break-word;
+    line-height: 1.7;
+}
+
+.widget-area .widget_bp_core_login_widget .bp-login-widget-user-link {
+    font-weight: 600;
+}
+
+/* BP Profile Search */
+.widget-area .widget_bp_profile_search .editfield div label {
+    margin: 7px 0;
+    font-weight: 400;
+}
+
+.widget-area .widget_bp_profile_search .clear-value {
+    display: block;
+    margin: 10px 0 15px;
+}
+
+.widget-area .widget_bp_profile_search .submit {
+    margin: 15px 0 0;
+}
+
+/* Search Widget */
+
+.widget-area .widget_search label {
+    display: block;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Avatar Widgets */
+.widget .avatar-block {
+    margin: -2px;
+    overflow: hidden;
+}
+
+.widget .avatar-block img.avatar {
+    margin: 4px;
+    float: left;
+}
+
+/* sidebar jobs */
+.widget {
+
+    ul.job_listings {
+        margin: 0;
+    }
+
+    ul.job_listings li.job_listing {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 5px;
+    }
+
+    ul.job_listings li.job_listing:hover {
+        box-shadow: none;
+    }
+
+    ul.job_listings li.job_listing.job_position_featured a:hover {
+        box-shadow: none;
+    }
+
+    ul.job_listings li.job_listing a {
+        padding: 1em 10px;
+        display: block;
+        align-items: inherit;
+    }
+
+    ul.job_listings li.job_listing a .meta li.job-type {
+        padding: 0 10px;
+        margin-top: 5px;
+    }
+
+    ul.job_listings li.job_position_featured {
+        background: #fefde5;
+    }
+
+    ul.job_listings li.job_listing ul.meta a {
+        display: inherit;
+        padding: 0;
+    }
+
+    ul.job_listings li.job_listing > ul.meta {
+        padding: 1em 10px;
+        padding-top: 0;
+    }
+
+    ul.job_listings li.job_listing > ul.meta li.job-type {
+        padding: 0 10px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+}
+
+.job_summary_shortcode {
+    width: 100% !important;
+
+    .job_summary_content {
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .job-type {
+        height: auto;
+        margin: 4px;
+    }
+}
+
+/* sidebar resumes */
+
+.widget {
+
+    ul.resumes {
+        margin: 0;
+    }
+
+    ul.resumes li.no_resumes_found,
+    ul.resumes li.resume {
+        margin-bottom: 5px;
+        padding: 15px;
+        border: 1px solid #e3e3e3;
+
+        &:hover {
+            box-shadow: inset 1px 0 0 #01ccff;
+        }
+    }
+
+    ul.resumes li.resume a {
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    ul.resumes li.resume_featured {
+        background: #fefee5;
+    }
+
+    ul.resumes li.resume ul.meta,
+    ul.resumes li.resume .candidate {
+        width: 100%;
+    }
+
+    ul.resumes li.resume .candidate {
+        margin-bottom: 5px;
+    }
+}

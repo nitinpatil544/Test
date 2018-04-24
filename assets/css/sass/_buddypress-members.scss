@@ -1,0 +1,193 @@
+/*Members Page Style*/
+#buddypress div.dir-search {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+form#search-groups-form input#groups_search,
+form#search-members-form input#members_search {
+    width: 100%;
+    min-width: 180px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid $color__border-default;
+    border-radius: 25px;
+    font-size: 13px;
+    padding: 0 16px;
+    z-index: 1;
+    position: relative;
+    margin: 0;
+}
+
+form#search-members-form,
+form#search-groups-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        font-family: "Flaticon";
+        content: "\f208";
+        position: absolute;
+        color: $color__link-gray;
+        right: 12px;
+    }
+}
+
+input#members_search_submit,
+input#groups_search_submit {
+    display: none;
+}
+
+body.members #buddypress div.item-list-tabs#subnav,
+body.activity #buddypress div.item-list-tabs#subnav {
+    border: 0;
+}
+
+#buddypress div.dir-search input[type=text],
+#buddypress li.groups-members-search input[type=text] {
+    float: left;
+    background: transparent;
+    height: 30px;
+    padding: 1px 3px 1px 10px;
+}
+
+#buddypress div.pagination .pagination-links a:hover {
+    font-weight: 400;
+}
+
+#buddypress #admins-list li,
+#buddypress #members-list li,
+#buddypress #mods-list li {
+    border-bottom: 0;
+}
+
+#buddypress .item-list.jm-members-list {
+    border: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.bp-inner-wrap {
+    border: 1px solid $color__border-default;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+    span.update {
+        display: none;
+    }
+
+    .item {
+        flex: 1;
+        margin-right: 20px;
+    }
+}
+
+#buddypress ul.item-list li div.item-title,
+#buddypress ul.item-list li h3,
+#buddypress ul.item-list li h4 {
+    width: 100%;
+    font-size: 16px;
+}
+
+#buddypress ul.item-list li img.avatar {
+    border-radius: 100%;
+    max-width: 50px
+}
+
+#buddypress ul.item-list li div.action div {
+    margin: 0 10px 0 0;
+}
+
+#buddypress ul.item-list li div.action div:last-child {
+    margin-right: 0;
+}
+
+#buddypress ul.item-list li div.action .generic-button a {
+    background: $color__link;
+    border: 0;
+    color: $color_white;
+    font-size: small;
+    cursor: pointer;
+    outline: 0;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        background: $color__link-hover;
+        border: 0;
+        color: $color_white;
+        outline: 0;
+        text-decoration: none;
+    }
+}
+
+#buddypress ul.item-list li div.action {
+    position: relative;
+    top: 0;
+    height: max-content;
+    bottom: 0;
+    /* margin: auto; */
+    vertical-align: middle;
+    display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+    #buddypress div.dir-search input[type=text] {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 544px) {
+    #members-dir-search,
+    #groups-dir-search {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /*    #buddypress #admins-list li,
+        #buddypress #members-list li,
+        #buddypress #mods-list li {
+            border-bottom: 1px solid $color__border-default;
+            padding: 0;
+            margin-bottom: 20px;
+            overflow: visible;
+        }*/
+
+    .bp-inner-wrap {
+        display: block;
+    }
+
+    .bp-inner-wrap .item {
+        width: auto;
+        margin-left: 60px;
+        margin-right: 0;
+    }
+
+    #buddypress ul.item-list li div.action {
+        position: relative;
+        top: auto;
+        display: inherit;
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    #buddypress ul.item-list li div.action div {
+        margin: 10px 10px 0 0;
+        display: inline-block;
+    }
+
+    #buddypress ul.item-list li div.action div:last-child {
+        margin-right: 0;
+    }
+}

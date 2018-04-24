@@ -1,0 +1,103 @@
+/* Template CSS */
+.site-content{
+    /*
+       Products layout 1
+      .products-layout-1 {
+        padding: 4rem 0;
+        background: $color_white;
+
+        .elementor-widget-heading,
+        .elementor-widget-text-editor {
+          margin: 0 auto 1.5rem;
+          max-width: 700px;
+
+          p {
+            margin: 0
+          }
+        }
+
+        .products-list-1 {
+          padding-top: 2rem;
+
+          .elementor-row > .elementor-element {
+            padding-left: 20px;
+
+            &:first-child {
+              padding-left: 0;
+            }
+          }
+
+          .elementor-widget-wrap {
+
+            .elementor-element {
+              margin-bottom: 0.5rem;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+
+            .elementor-widget-icon {
+              margin-bottom: 0.75rem;
+            }
+          }
+        }
+      }
+
+       Services layout 1
+      .services-layout-1 {
+        padding: 4rem 0;
+
+        .elementor-widget-heading,
+        .elementor-widget-text-editor {
+          margin: 0 auto 1.5rem;
+          max-width: 700px;
+
+          p {
+            margin: 0
+          }
+        }
+
+        .services-list-1 {
+          padding-top: 2rem;
+
+          .elementor-row > .elementor-element {
+            padding-left: 20px;
+
+            &:first-child {
+              padding-left: 0;
+            }
+          }
+
+          .elementor-widget-wrap {
+            position: relative;
+            padding: 1.8rem 2rem 2rem 7rem;
+            border: 1px solid rgb(243, 243, 243);
+            background-color: $color_white;
+            box-shadow: 1.5px 2.598px 24px 0px rgba(0, 0, 0, 0.04);
+
+            .elementor-element {
+              margin-bottom: 0.5rem;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+
+            .elementor-widget-icon {
+              position: absolute;
+              width: 4rem;
+              left: 1.8rem;
+              top: 2rem;
+            }
+          }
+        }
+      }*/
+}
+
+.heading-link {
+
+    .elementor-heading-title {
+        color: $color__link;
+    }
+}

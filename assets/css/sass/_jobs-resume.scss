@@ -1,0 +1,491 @@
+.resume_filters {
+    background: $color__background-jobs-form;
+    padding: 25px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.resume_filters .search_resumes {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.resume_filters .search_resumes div.resume-filter,
+.resume_filters .search_resumes div.resume-filter {
+    width: 30%;
+
+    input {
+        border: none;
+    }
+}
+
+.resume_filters .search_resumes div.resume-filter.filter_wide,
+.resume_filters .search_resumes div.resume-filter.search_categories {
+    padding-top: 0;
+    clear: both;
+    width: 30%;
+    padding-left: 15px;
+}
+
+.resume_filters .showing_resumes {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+ul.resumes {
+    background: $color_white;
+    border: 0;
+}
+
+ul.resumes li.no_resumes_found,
+ul.resumes li.resume {
+    padding: 16px 28px;
+    border: 1px solid $color__border-default;
+    border-bottom: 0;
+
+    &:last-child {
+        border-bottom: 1px solid $color__border-default;
+    }
+}
+
+ul.resumes li.resume.resume_featured {
+    background: #fefee5;
+}
+
+ul.resumes li.no_resumes_found a,
+ul.resumes li.resume a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.resumes li.no_resumes_found a:focus,
+ul.resumes li.no_resumes_found a:hover,
+ul.resumes li.resume a:focus,
+ul.resumes li.resume a:hover {
+    background: none;
+}
+
+ul.resumes li.no_resumes_found a img,
+ul.resumes li.resume a img {
+    width: 50px;
+    height: 50px;
+    left: 0;
+}
+
+ul.resumes li.no_resumes_found a div.candidate-column,
+ul.resumes li.resume a div.candidate-column {
+    padding: 0 1em 0 74px;
+}
+
+body ul.job_listings .job_listing:hover,
+//body .job_position_featured,
+body li.type-resume:hover {
+    background: $color__background-table-row-hover;
+    border-left-color: $color__link;
+    box-shadow: inset 4px 0 0 $color__link;
+}
+
+ul.resumes li.resume a div.candidate-column .candidate-title strong {
+    font-weight: 500;
+}
+
+div.resumes .load_more_resumes {
+    text-align: center;
+    display: block;
+    padding: 0;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.03rem;
+    color: $color_white;
+    background-color: $color__link;
+    border-radius: 0;
+    border: 0;
+    margin: 50px auto;
+
+    &:focus,
+        &:hover {
+        color: $color_white;
+        text-decoration: none;
+        background: $color__link-hover;
+    }
+}
+
+/* Submit Resume */
+.single-resume {
+    .jm-post-entry-header {
+        display: none;
+    }
+}
+
+.jobmate-resume-meta-header.resume-aside.meta {
+    max-width: 800px;
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 40px;
+
+    p {
+        font-size: 16px;
+        display: inline-block;
+        margin: 0 20px;
+        color: $color_white;
+        padding: 10px 0;
+        line-height: 1;
+        position: relative;
+
+        &:after {
+            content: ' ';
+            width: 1px;
+            height: 20px;
+            background: $color_white;
+            position: absolute;
+            right: -24px;
+            top: 8px;
+            display: block;
+        }
+
+        &:last-child:after {
+            content: none;
+        }
+
+        a {
+            font-size: initial;
+            color: $color_white;
+        }
+    }
+}
+
+form#submit-resume-form {
+    background: $color__background-form;
+    padding: 16px 28px;
+}
+
+.single-resume .resume_contact {
+    margin: 50px 0;
+}
+
+/* Candidate Dashboard */
+table.resume-manager-resumes {
+    border: 1px solid $color__border-default;
+    background: $color_white;
+}
+
+table.resume-manager-resumes thead {
+    background: $color__background-thead;
+    color: $color_white;
+
+    th {
+        font-weight: 500;
+    }
+
+    th.resume-title {
+        padding-left: 28px;
+    }
+}
+
+table.resume-manager-resumes tr:hover td.resume-title {
+    border-left-color: $color__link;
+    box-shadow: inset 4px 0px 0 0px $color__link;
+}
+
+ul.resumes li.no_resumes_found a div.candidate-column h3, ul.resumes li.resume a div.candidate-column h3 {
+    font-size: 16px;
+    display: inline-block;
+}
+
+td.resume-title {
+    border-left: 1px solid $color__border-default;
+    padding-left: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        color: $color__text-heading;
+
+        &:hover {
+            color: $color__link;
+        }
+    }
+}
+
+td.date {
+    padding-right: 28px;
+}
+
+#resume-manager-candidate-dashboard table ul.candidate-dashboard-actions li .candidate-dashboard-action-delete {
+    color: $color_gray;
+
+    &:hover {
+        color: red;
+    }
+}
+
+#resume-manager-candidate-dashboard table ul.candidate-dashboard-actions {
+    visibility: visible;
+
+    li a {
+        color: $color_gray;
+        font-size: 13px;
+        font-weight: 400;
+
+        &:hover {
+            color: $color__link;
+        }
+    }
+}
+
+#resume-manager-candidate-dashboard table td {
+    vertical-align: middle;
+}
+
+tfoot {
+    background: $color_gray;
+
+    td a {
+        padding-left: 28px;
+    }
+}
+
+/* Single Resume */
+.single-resume .resume-aside img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    float: left;
+    vertical-align: middle;
+    box-shadow: none;
+}
+
+.single-resume .entry-content .fluid-width-video-wrapper {
+    margin: 0;
+}
+
+.single-resume {
+    .type-resume,
+    nav.navigation.post-navigation {
+        max-width: 800px;
+        margin: auto;
+        position: relative;
+    }
+}
+
+.single-resume .resume-aside .job-title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.single-resume .resume-aside .location {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.single-resume-content h2.single-resume-skills {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.single-resume .resume-manager-skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: auto;
+        display: initial;
+        padding-left: 20px;
+        margin-right: 15px;
+        position: relative;
+
+        &:before {
+            content: '\f245';
+            font-family: "Flaticon";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.single-resume .resume-aside .resume-links {
+    float: none;
+    max-width: 100%;
+}
+
+.single-resume .resume-aside .resume-links li {
+    padding: 0;
+    float: left;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.single-resume .meta li {
+    padding-left: 0;
+    line-height: 1.5;
+}
+
+.single-resume .resume_contact .resume_contact_button {
+    height: 48px;
+}
+
+.single-resume-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.single-resume .resume-manager-education h3, .single-resume .resume-manager-experience h3 {
+    font-size: 20px;
+
+    strong {
+        font-weight: 500;
+    }
+}
+
+.single-resume aside#secondary {
+    display: none;
+}
+
+.single-resume .resume-manager-education, .single-resume .resume-manager-experience {
+    margin-bottom: 30px;
+    border-top: 1px solid $color__border-default;
+}
+
+.single-resume .resume-manager-education h3:before,
+.single-resume .resume-manager-experience h3:before {
+    left: -1px;
+    background: $color__link;
+}
+
+.single-resume .resume-manager-education dd, .single-resume .resume-manager-education dt, .single-resume .resume-manager-experience dd, .single-resume .resume-manager-experience dt {
+    border-left: 1px solid $color__border-default;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 6px 20px 6px 10px;
+    background: #e9e9e9;
+    border: 0;
+    margin: 6px 0 6px 5px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    top: 7px;
+}
+
+@media only screen and (min-width: 544px) {
+    ul.resumes li.no_resumes_found a img, ul.resumes li.resume a img {
+        position: relative;
+    }
+
+    ul.resumes li.no_resumes_found a div.candidate-column,
+    ul.resumes li.resume a div.candidate-column {
+        padding: 0 1em 0 0;
+    }
+
+    ul.resumes li.no_resumes_found a img,
+    ul.resumes li.resume a img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media only screen and (max-width: 543px) {
+    .jobmate-resume-meta-header.resume-aside.meta p {
+        display: block;
+
+        &:after {
+            content: none;
+        }
+    }
+
+    .candidate-info {
+        margin-top: 20px;
+    }
+
+    .resume_filters {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 15px;
+    }
+
+    .resume_filters .search_resumes div.resume-filter,
+    .resume_filters .search_resumes div.resume-filter {
+        width: 100%;
+    }
+
+    .resume_filters .search_resumes {
+        display: block;
+    }
+
+    .resume_filters .search_resumes div {
+        margin-bottom: 15px;
+    }
+
+    .resume_filters .search_resumes div:last-child {
+        margin-bottom: 0;
+    }
+
+    .resume_filters .search_resumes div.resume-filter.search_keywords,
+    .resume_filters .search_resumes div.resume-filter.search_location {
+        float: none;
+        padding: 0;
+    }
+
+    .resume_filters .search_resumes div.resume-filter.filter_wide,
+    .resume_filters .search_resumes div.resume-filter.search_categories {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    ul.resumes li.no_resumes_found, ul.resumes li.resume {
+        border: 1px solid #e3e3e3;
+        margin-bottom: 15px;
+        //box-shadow: 0 4px 22px 0 rgba(65, 71, 108, 0.15);
+
+        &:hover {
+            border-left-color: $color__link;
+            box-shadow: inset 4px 0 0 $color__link;
+        }
+    }
+
+    ul.resumes li.no_resumes_found a, ul.resumes li.resume a {
+        display: block;
+    }
+
+    ul.resumes li.no_resumes_found a div.candidate-column, ul.resumes li.resume a div.candidate-column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    ul.resumes li.no_resumes_found a div.candidate-column, ul.resumes li.resume a div.candidate-column {
+        padding-right: 0;
+    }
+
+    ul.resumes li.no_resumes_found a .candidate-location-column, ul.resumes li.resume a .candidate-location-column,
+    ul.resumes li.no_resumes_found a .resume-posted-column, ul.resumes li.resume a .resume-posted-column {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+}
+
+@media (max-width: 580px) {
+    #resume-manager-candidate-dashboard  {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,25 @@
+/* Extra small screen / phone */
+@media( max-width: $grid-breakpoint-small - 1 ) {
+
+}
+
+/* Small screen / phone */
+@media (min-width: $grid-breakpoint-small) {
+
+}
+
+/* Medium screen / tablet */
+@media (min-width: 851px) {
+
+}
+
+/* Medium screen / tablet */
+@media (min-width: $grid-breakpoint-medium) and (max-width: $grid-breakpoint-large - 1){
+
+}
+
+
+/* Mobile */
+@media (max-width: $grid-breakpoint-medium - 1) {
+
+}

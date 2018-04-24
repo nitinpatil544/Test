@@ -1,0 +1,66 @@
+/* Footer */
+.footer-wrap {
+    padding: 60px 0;
+    background: $color__background-mobile-nav;
+    color: $color__link-gray;
+
+    .widget-area {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 26px;
+        color: #fff;
+        margin: 0 0 15px;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    a {
+        display: block;
+        font-size: 15px;
+        color: #888;
+        line-height: 2;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .widget-title {
+        border-bottom: 1px solid #1e2227;
+    }
+
+    .widget-area .widget-area-inner {
+        padding: 0;
+    }
+
+    .widget-area .widget {
+        margin-bottom: 0;
+    }
+}
+
+#jobmate-copyright-text {
+    border-top: 1px solid #262d43;
+}
+
+@media (max-width: $grid-breakpoint-medium) {
+    .footer-wrap {
+        .grid-cell {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+@media (max-width: $grid-breakpoint-small) {
+    .footer-wrap {
+        .grid-cell {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}

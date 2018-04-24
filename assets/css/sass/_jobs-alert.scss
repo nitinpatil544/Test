@@ -1,0 +1,81 @@
+form.job-manager-form {
+    background: $color__background-form;
+    padding: 16px 28px;
+}
+
+table.job-manager-alerts thead {
+    background: $color__background-thead;
+    color: $color_white;
+}
+
+#job-manager-alerts th {
+    font-weight: 500;
+    padding: 15px 10px;
+
+    &:first-child{
+        padding-left: 28px;
+    }
+
+    &:last-child {
+        padding-right: 28px;
+    }
+}
+
+#job-manager-alerts table ul.job-alert-actions {
+    visibility: visible;
+
+    li a {
+        color: $color_gray;
+        font-size: 13px;
+        font-weight: 400;
+
+        &:hover {
+            color: $color__link;
+        }
+    }
+}
+
+#job-manager-alerts table ul.job-alert-actions li .job-alerts-action-delete {
+    color: $color_gray;
+
+    &:hover {
+        color: red;
+    }
+}
+
+#job-manager-alerts tbody {
+
+    tr.alert-enabled td {
+        padding: 16px 10px;
+    }
+
+    tr.alert-enabled td:first-child {
+        font-size: 16px;
+        color: $color__text-heading;
+        font-weight: 500;
+        padding-left: 28px;
+        border-left: 1px solid $color__border-default;
+    }
+
+    tr.alert-disabled td:first-child {
+        padding-left: 28px;
+        border-left: 1px solid $color__border-default;
+    }
+
+    tr.alert-enabled td:last-child {
+        padding-right: 28px;
+        border-right: 1px solid $color__border-default;
+    }
+
+    tr:hover td:first-child {
+        border-left-color: $color__link;
+        box-shadow: inset 4px 0px 0 0px $color__link;
+    }
+}
+
+@media (max-width: 700px) {
+    div#job-manager-alerts {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}

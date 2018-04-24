@@ -1,0 +1,215 @@
+/*--------------------------------------------------------------
+2.2 - Form fields, general styles first
+--------------------------------------------------------------*/
+::-webkit-input-placeholder { color: #AEBBCF; }
+::-moz-placeholder { color: #AEBBCF; } /* firefox 19+ */
+:-ms-input-placeholder { color: #AEBBCF; } /* ie */
+input:-moz-placeholder { color: #AEBBCF; }
+
+.error::-webkit-input-placeholder { color: #E0613C; }
+.error::-moz-placeholder { color: #E0613C; } /* firefox 19+ */
+.error:-ms-input-placeholder { color: #E0613C; } /* ie */
+input.error:-moz-placeholder { color: #E0613C; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    color: $color__text-input;
+    background: #fdfdfd;
+    border: 1px solid $color__border-input;
+    outline: none;
+    border-radius: 1px;
+
+    &:focus {
+        color: $color__text-input-focus;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="search"] {
+    height: 38px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 38px;
+}
+
+textarea {
+    padding-left: 3px;
+    font-size: 14px;
+    width: 100%;
+    overflow: auto; /* Remove default vertical scrollbar in IE 8/9/10/11. */
+}
+
+select {
+    //padding: 8px 8px 10px;
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+    line-height: normal;
+    color: $color__text-site;
+    background: transparent;
+    border: 1px solid #ddd;
+    //-webkit-appearance: none;
+    //appearance: none;
+}
+
+
+.btn,
+input[type=submit],
+input[type=button],
+#submit {
+    position: relative;
+    display: inline-block;
+    padding: rem-calc(12px 16px);
+    min-width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    @include letter-spacing(30);
+    color: $color_white;
+    background-color: $color__link;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    //text-transform: uppercase;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+
+    &:hover {
+        /*        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);*/
+        color: $color_white;
+        text-decoration: none;
+        background: $color__link-hover;
+    }
+
+    &.btn-ghost {
+        background: transparent;
+        border: 2px solid $color_white;
+    }
+
+    &.btn-small {
+        padding: rem-calc(8px 20px);
+        min-width: 90px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    &.btn-extra-small {
+        //padding: rem-calc(4px 12px);
+        font-size: 12px;
+        //min-width: 0;
+        //height: 32px;
+        //line-height: 32px;
+    }
+}
+
+input.search-field {
+    width: 100%;
+}
+
+.btn-ghost {
+
+    .elementor-button{
+        background: transparent;
+        border: 2px solid $color_white;
+    }
+}
+
+.read-more-link {
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+    color: $color__link-gray;
+    font-weight: 400;
+
+    &:after{
+        content: '\27F6';
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 14px;
+    }
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form.wpcf7-form input {
+    width: 100%;
+}
+
+form.wpcf7-form input[type=submit] {
+    width: auto;
+}
+
+
+/* free-consulation-form */
+
+.free-consulation-form {
+    label {
+        color: $color_white;
+    }
+
+    .wpcf7 {
+
+        .wpcf7-validation-errors,
+        div.wpcf7-mail-sent-ok {
+            color: $color_white;
+        }
+    }
+
+    .nf-form-wrap {
+
+        .nf-form-fields-required {
+            display: none;
+        }
+
+        input {
+            height: 38px;
+        }
+
+        .nf-form-fields-required,
+        .nf-response-msg p {
+            color: $color_white;
+        }
+
+        input[type=button] {
+            line-height: 0;
+        }
+    }
+
+    .nf-field-element textarea,
+    textarea,
+    .gform_wrapper textarea.small,
+    .gform_wrapper textarea.medium,
+    .gform_wrapper textarea.large {
+        height: 38px;
+        min-height: 38px;
+        resize: vertical;
+    }
+
+    .gform_wrapper .gform_heading {
+        display: none;
+    }
+
+    .gform_confirmation_message {
+        color: $color_white;
+    }
+}

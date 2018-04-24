@@ -1,0 +1,80 @@
+.about-page-tab {
+    .elementor-tabs-wrapper {
+        border: 1px solid #ebebeb;
+    }
+
+    ul {
+        margin: 2em 0;
+        list-style: none;
+    }
+
+    li {
+        margin: 1em;
+        margin-left: 24px;
+    }
+
+    li:before {
+        content: '\f12e';
+        font-family: 'Flaticon';
+        float: left;
+        margin-left: -1.5em;
+        color: #0074D9;
+    }
+}
+
+.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.active,
+body .elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.elementor-active {
+    background: $color__link;
+    color: $color_white;
+    position: relative;
+}
+
+body .elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.elementor-active:after,
+body .elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.active:after {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right:12px solid $color_white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    vertical-align: middle;
+    margin: auto;
+}
+
+body .elementor-widget-tabs .elementor-tab-desktop-title {
+    padding: 25px 32px;
+}
+
+.elementor-widget-tabs .elementor-tab-title {
+    border-bottom: 1px solid #ebebeb !important;
+
+    &:last-child {
+        border-bottom: none !important;
+    }
+}
+
+body .elementor-widget-tabs .elementor-tab-content {
+    padding: 0 0 0 90px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    body .elementor-widget-tabs .elementor-tab-mobile-title {
+        background: $color_white;
+        padding: 20px;
+    }
+
+    body .elementor-widget-tabs .elementor-tab-content {
+        padding: 20px !important;
+        background: $color_white;
+        border-bottom: 1px solid #ebebeb !important;
+    }
+
+    .elementor-tab-title.elementor-tab-mobile-title.elementor-active,
+    .elementor-tab-title.elementor-tab-mobile-title.active {
+        background: $color__link !important;
+        color: $color_white;
+        position: relative;
+    }
+}
